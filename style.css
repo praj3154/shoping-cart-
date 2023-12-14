@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+  background-color: black;
+  color: white;
+}
+.nav{
+    padding: 40px 50px;
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 3px 1px 0px red;
+    margin-bottom:  40px ;
+}
+.nav button{
+    background: red;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px white;
+    position: relative;
+}
+.nav h1{
+    text-shadow: 2px 3px 4px red;
+}
+.nav button :hover {
+    font-size: large;
+    box-shadow: 2px 8px 9px white;
+    cursor: pointer;
+}
+.nav h1 :hover{
+    font-size: large;
+    text-shadow: 7px 8px 9px red;
+}
+.cartvalue{
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    border-radius: 2px;
+
+    background-color: white;
+    padding: 4px;
+
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 30px ;
+    justify-content: center;
+
+}
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2,223px);
+    }
+}
+@media (max-width:500px){
+    .shop{
+        grid-template-columns: repeat(1,223px);
+    }
+}
+.item{
+    border: 2px solid red;
+    border-radius: 2px;
+
+}
+.ditails{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.price-quntaty {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    gap: 8px;
+}
