@@ -62,10 +62,14 @@ body{
     }
 }
 .item{
-    border: 2px solid red;
+    border: 2px solid white;
     border-radius: 2px;
+    box-shadow: 6px 3px 4px red;
+    cursor: pointer;
 
 }
+
+
 .ditails{
     display: flex;
     flex-direction: column;
